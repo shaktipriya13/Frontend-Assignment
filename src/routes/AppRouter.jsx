@@ -32,7 +32,8 @@
 
 //       {/* NAVBAR */}
 //       <header className="sticky top-0 z-50 p-4" role="banner">
-//         <div className="container mx-auto glass-panel rounded-2xl px-6 py-3 flex justify-between items-center">
+//         {/* CHANGED: Replaced 'container' with 'w-full max-w-[98%]' */}
+//         <div className="w-full max-w-[98%] mx-auto glass-panel rounded-2xl px-6 py-3 flex justify-between items-center">
 //           <Link
 //             className="font-bold text-xl tracking-tight flex items-center gap-2 focus:outline-none rounded-lg"
 //             to="/"
@@ -49,11 +50,9 @@
 //           </nav>
 //         </div>
 //       </header>
-
-//       {/* Main Content Area with ID for Skip Link */}
 //       <main
 //         id="main-content"
-//         className="flex-1 container mx-auto p-4 animate-fade-in"
+//         className="flex-1 w-full max-w-[98%] mx-auto p-4 animate-fade-in"
 //         role="main"
 //       >
 //         <Routes>
@@ -65,12 +64,15 @@
 //   );
 // }
 
-import React from "react";
+import React, { useState } from "react";
 import { Routes, Route, Link, useLocation } from "react-router-dom";
 import Home from "../pages/Home";
 import Admin from "../pages/Admin";
+import Welcome from "../pages/Welcome"; // Import the new page
 
 export default function AppRouter() {
+  // State to track if user has clicked "Explore"
+  const [hasEntered, setHasEntered] = useState(false);
   const location = useLocation();
 
   const NavLink = ({ to, children }) => {
@@ -90,16 +92,20 @@ export default function AppRouter() {
     );
   };
 
+  // 1. IF NOT ENTERED YET, SHOW WELCOME SCREEN
+  if (!hasEntered) {
+    return <Welcome onExplore={() => setHasEntered(true)} />;
+  }
+
+  // 2. OTHERWISE, SHOW THE MAIN APP
   return (
-    <div className="min-h-screen flex flex-col">
-      {/* 1. Skip Link for Accessibility */}
+    <div className="min-h-screen flex flex-col animate-fade-in">
       <a href="#main-content" className="skip-link">
         Skip to Main Content
       </a>
 
       {/* NAVBAR */}
       <header className="sticky top-0 z-50 p-4" role="banner">
-        {/* CHANGED: Replaced 'container' with 'w-full max-w-[98%]' */}
         <div className="w-full max-w-[98%] mx-auto glass-panel rounded-2xl px-6 py-3 flex justify-between items-center">
           <Link
             className="font-bold text-xl tracking-tight flex items-center gap-2 focus:outline-none rounded-lg"
@@ -118,11 +124,10 @@ export default function AppRouter() {
         </div>
       </header>
 
-      {/* Main Content Area with ID for Skip Link */}
-      {/* CHANGED: Replaced 'container' with 'w-full max-w-[98%]' */}
+      {/* Main Content */}
       <main
         id="main-content"
-        className="flex-1 w-full max-w-[98%] mx-auto p-4 animate-fade-in"
+        className="flex-1 w-full max-w-[98%] mx-auto p-4"
         role="main"
       >
         <Routes>

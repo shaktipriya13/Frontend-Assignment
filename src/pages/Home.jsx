@@ -52,7 +52,8 @@ export default function Home() {
       </div>
 
       {/* MIDDLE - TOPICS LIST */}
-      <div className="lg:col-span-3 h-full overflow-hidden">
+      {/* <div className="lg:col-span-3 h-full overflow-hidden"> */}
+      <div className="lg:col-span-3 h-96 lg:h-full overflow-hidden">
         <div className="glass-panel rounded-xl h-full flex flex-col">
           <div className="p-4 border-b border-white/5 bg-white/5 backdrop-blur-sm">
             <h2 className="font-semibold text-white/90">Curriculum</h2>
