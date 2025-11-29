@@ -2,7 +2,9 @@
 
 A modern, responsive learning platform built with React, Vite, and Tailwind CSS. This application renders course content dynamically from JSON, supports Markdown rendering, and features a comprehensive admin surface.
 
-**[🚀 View Live Demo](PUT_YOUR_VERCEL_LINK_HERE)**
+<img width="1907" height="836" alt="image" src="https://github.com/user-attachments/assets/19c0b13c-4032-44d1-845d-2479bb60da09" />
+
+**[🚀 View Live Demo](https://course-explorer-omega.vercel.app/)**
 
 ---
 
