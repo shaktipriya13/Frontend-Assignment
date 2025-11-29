@@ -27,17 +27,31 @@ export default function useCoursesLocal() {
     return courses;
   }
 
+  //   function addOrUpdateCourse(course) {
+  //     const fixed = ensureIds([course])[0];
+  //     if (!course.id) {
+  //       setCourses((prev) => [fixed, ...(Array.isArray(prev) ? prev : [])]);
+  //       return;
+  //     }
+  //     setCourses((prev) =>
+  //       Array.isArray(prev)
+  //         ? prev.map((c) => (c.id === course.id ? fixed : c))
+  //         : [fixed]
+  //     );
+  //   }
   function addOrUpdateCourse(course) {
     const fixed = ensureIds([course])[0];
-    if (!course.id) {
-      setCourses((prev) => [fixed, ...(Array.isArray(prev) ? prev : [])]);
-      return;
+
+    // Check if this ID already exists in our list
+    const exists = courses.some((c) => c.id === fixed.id);
+
+    if (exists) {
+      // UPDATE existing course
+      setCourses((prev) => prev.map((c) => (c.id === fixed.id ? fixed : c)));
+    } else {
+      // CREATE new course (Add to top)
+      setCourses((prev) => [fixed, ...prev]);
     }
-    setCourses((prev) =>
-      Array.isArray(prev)
-        ? prev.map((c) => (c.id === course.id ? fixed : c))
-        : [fixed]
-    );
   }
 
   function deleteCourse(id) {

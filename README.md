@@ -1,16 +1,77 @@
-# React + Vite
+# 📘 Course Explorer (React Intern Assignment)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive learning platform built with React, Vite, and Tailwind CSS. This application renders course content dynamically from JSON, supports Markdown rendering, and features a comprehensive admin surface.
 
-Currently, two official plugins are available:
+**[🚀 View Live Demo](PUT_YOUR_VERCEL_LINK_HERE)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🧭 Project Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This project was built to demonstrate proficiency in:
 
-## Expanding the ESLint configuration
+- **React Architecture:** Component composition, custom hooks, and context-free state management.
+- **Modern Styling:** A "Glassmorphism" UI using Tailwind CSS with dark mode aesthetics.
+- **Data Handling:** Complex JSON parsing, deep linking, and local persistence.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features Implemented
+
+### ✅ Core Requirements (Must-Haves)
+
+- **Dynamic Course Renderer:** recursively maps courses -> topics -> subtopics.
+- **Markdown Support:** Renders rich text using `react-markdown` with GFM support.
+- **Responsive Sidebar:** Collapsible and mobile-friendly navigation.
+- **Search & Filtering:** Real-time filtering of courses and topics.
+- **Admin Dashboard:** Read-only view of user data.
+
+### 🌟 Advanced Features (Bonuses Implemented)
+
+- **🎨 Custom Markdown Styling:** Support for **Syntax Highlighting** (Neon theme), **Tables**, and GitHub-style **Callouts** (Alerts).
+- **💾 LocalStorage Persistence:** Progress tracking and created courses persist after refresh.
+- **📊 Progress Tracking:** Dynamic progress bars at both Course and Topic levels.
+- **🔗 Deep Linking:** Shareable URLs (`?course=ID&topic=ID`).
+- **⌨️ Accessibility (A11y):** Full Keyboard navigation (Arrow keys, Tab), Focus rings, and ARIA labels.
+- **✏️ Course Creator:** A full UI to Create and Edit courses with dynamic form arrays.
+- **📥 Import/Export:** Ability to export course data to JSON and import it back.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** React 18 + Vite
+- **Styling:** Tailwind CSS (Custom Configuration)
+- **Routing:** React Router DOM v6
+- **Markdown:** `react-markdown`, `rehype-highlight`, `remark-gfm`
+- **Icons:** Heroicons (via SVG)
+
+---
+
+## 🚀 Setup & Installation
+
+1.  **Clone the repository**
+
+    ```bash
+    git clone [https://github.com/YOUR_USERNAME/course-explorer.git](https://github.com/YOUR_USERNAME/course-explorer.git)
+    cd course-explorer
+    ```
+
+2.  **Install Dependencies**
+
+    ```bash
+    npm install
+    ```
+
+3.  **Run Development Server**
+
+    ```bash
+    npm run dev
+    ```
+
+4.  **Build for Production**
+    ```bash
+    npm run build
+    ```
+
+---
+
+## 📂 Folder Structure

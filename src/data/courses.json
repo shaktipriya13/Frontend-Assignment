@@ -12,7 +12,7 @@
         "Build RESTful APIs with Node.js and Express",
         "Work with databases and authentication"
       ],
-      "coverImageUrl": "https://example.com/images/fullstack-course.jpg",
+      "coverImageUrl": "/images/fullstack.jpg",
       "authorId": 1,
       "topics": [
         {
@@ -189,7 +189,7 @@
         "Solve problems under constraints",
         "Write clean, testable algorithmic code"
       ],
-      "coverImageUrl": "https://example.com/images/dsa-java.jpg",
+      "coverImageUrl": "/images/dsa.png",
       "authorId": 2,
       "topics": [
         {
@@ -366,7 +366,7 @@
         "Tune models with validation and cross‑validation",
         "Package and ship simple models"
       ],
-      "coverImageUrl": "https://example.com/images/ml-fundamentals.jpg",
+      "coverImageUrl": "/images/ml.png",
       "authorId": 3,
       "topics": [
         {
