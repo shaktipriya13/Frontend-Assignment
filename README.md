@@ -19,6 +19,9 @@ _(Note: Data is persisted in your browser's LocalStorage. Feel free to create co
 ## 🎯 Project Overview
 
 ![Animation](https://github.com/user-attachments/assets/e9483059-a627-4977-93b3-aed97f114d57)
+</br>
+</br>
+</br>
 ![Animation3](https://github.com/user-attachments/assets/d95f5c75-9d9d-4bfc-ae91-871e1db5a6aa)
 
 
