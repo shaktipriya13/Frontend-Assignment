@@ -18,7 +18,8 @@ _(Note: Data is persisted in your browser's LocalStorage. Feel free to create co
 
 ## 🎯 Project Overview
 
-![alt text](image.png)
+![Animation](https://github.com/user-attachments/assets/e9483059-a627-4977-93b3-aed97f114d57)
+
 
 This project was built as a comprehensive solution to the **React Intern Take-Home Assignment**. It goes beyond the core requirements to implement a production-ready UI/UX with "Glassmorphism" aesthetics, full keyboard accessibility, and content management features.
 
