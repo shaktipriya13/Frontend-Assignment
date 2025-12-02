@@ -18,7 +18,13 @@ _(Note: Data is persisted in your browser's LocalStorage. Feel free to create co
 
 ## 🎯 Project Overview
 
-![alt text](image.png)
+![Animation](https://github.com/user-attachments/assets/e9483059-a627-4977-93b3-aed97f114d57)
+</br>
+</br>
+</br>
+![Animation3](https://github.com/user-attachments/assets/d95f5c75-9d9d-4bfc-ae91-871e1db5a6aa)
+
+
 
 This project was built as a comprehensive solution to the **React Intern Take-Home Assignment**. It goes beyond the core requirements to implement a production-ready UI/UX with "Glassmorphism" aesthetics, full keyboard accessibility, and content management features.
 
@@ -29,7 +35,7 @@ This project was built as a comprehensive solution to the **React Intern Take-Ho
 | **Core**        | ✅ Dynamic Course Renderer (JSON to UI)<br>✅ Nested Navigation (Course → Topic → Subtopic)<br>✅ Real-time Search & Filtering<br>✅ Admin Dashboard (Read-only User List)                                                                                   |
 | **UX & Design** | ✅ **Glassmorphism Theme** (Dark Mode Aesthetic)<br>✅ Fully Responsive Mobile Layout<br>✅ **Keyboard Navigation** (Arrow keys for menus, Tab focus rings)<br>✅ ARIA-friendly labels                                                                       |
 | **Content**     | ✅ **Rich Markdown**: Syntax Highlighting, Tables, GitHub-style Alerts (`[!NOTE]`)<br>✅ Deep Linking (Shareable URLs via Query Params)<br>✅ Breadcrumb Navigation                                                                                          |
-| **Bonus** 🏆    | ✅ **Course Creator:** Create & Edit courses with dynamic forms<br>✅ **Persistence:** `localStorage` saves progress & new courses<br>✅ **Progress Tracking:** Dynamic % bars at Course & Topic levels<br>✅ **Data Mgmt:** Import/Export JSON & Reset Data |
+| **Bonus** 🏆    | ✅ **Course Creator:** Create & Edit courses with dynamic forms<br>✅ **Persistence:** `localStorage` saves progress & new courses<br>✅ **Progress Tracking:** Checkboxes/toggles for marking subtopics complete, persistent state via `localStorage`, and completion percentage at topic & course levels.<br>✅ **Data Mgmt:** Import/Export JSON & Reset Data |
 
 ---
 
