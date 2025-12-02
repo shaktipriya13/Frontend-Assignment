@@ -27,18 +27,6 @@ export default function useCoursesLocal() {
     return courses;
   }
 
-  //   function addOrUpdateCourse(course) {
-  //     const fixed = ensureIds([course])[0];
-  //     if (!course.id) {
-  //       setCourses((prev) => [fixed, ...(Array.isArray(prev) ? prev : [])]);
-  //       return;
-  //     }
-  //     setCourses((prev) =>
-  //       Array.isArray(prev)
-  //         ? prev.map((c) => (c.id === course.id ? fixed : c))
-  //         : [fixed]
-  //     );
-  //   }
   function addOrUpdateCourse(course) {
     const fixed = ensureIds([course])[0];
 

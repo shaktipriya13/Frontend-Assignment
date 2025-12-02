@@ -5,10 +5,8 @@ import rehypeRaw from "rehype-raw";
 import rehypeHighlight from "rehype-highlight";
 import ProgressCheckbox from "./ProgressCheckbox";
 
-// Custom Renderer for Blockquotes to support GitHub-style alerts
-// Syntax: > [!NOTE] or > [!WARNING] or > [!TIP]
 const CustomBlockquote = ({ children }) => {
-  // Extract text from children to check for alert patterns
+
   const childrenArray = React.Children.toArray(children);
   const firstChild = childrenArray[0];
   let text = "";
@@ -74,32 +72,6 @@ const CustomBlockquote = ({ children }) => {
   return <blockquote>{children}</blockquote>;
 };
 
-// export default function SubtopicView({
-//   course,
-//   topicIndex,
-//   subIndex,
-//   progressMap,
-//   setProgressMap,
-// }) {
-//   const topic = course.topics[topicIndex];
-//   const sub = topic?.subtopics?.[subIndex];
-
-//   if (!sub)
-//     return (
-//       <div className="flex flex-col items-center justify-center h-full text-slate-500 p-10 text-center">
-//         <div className="w-16 h-16 rounded-full bg-white/5 flex items-center justify-center mb-4 text-2xl">
-//           👋
-//         </div>
-//         <h3 className="text-lg font-medium text-slate-300">
-//           Welcome to {course.title}
-//         </h3>
-//         <p className="mt-2 text-sm max-w-xs">
-//           Select a topic from the curriculum on the left to begin learning.
-//         </p>
-//       </div>
-//     );
-
-//   const key = `${course.id}::${topicIndex}::${subIndex}`;
 export default function SubtopicView({
   course,
   topicIndex,

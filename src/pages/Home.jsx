@@ -95,10 +95,6 @@ export default function Home() {
           <div className="h-full overflow-y-auto custom-scrollbar p-1">
             <CourseForm
               initial={editingCourse}
-              //   onSave={(c) => {
-              //     addOrUpdateCourse(c);
-              //     setEditingCourse(null);
-              //   }}
               onSave={(c) => {
                 addOrUpdateCourse(c);
                 setEditingCourse(null);

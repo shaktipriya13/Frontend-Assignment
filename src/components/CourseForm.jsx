@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 
-// Minimal dynamic form: add course title, subtitle, description, topics & subtopics
 export default function CourseForm({ initial = null, onSave, onCancel }) {
-  // FIX: Safely merge 'initial' with defaults.
-  // Even if 'initial' is {}, we fallback to default strings/arrays.
+
   const [course, setCourse] = useState({
     id: initial?.id || Date.now(),
     title: initial?.title || "",
