@@ -8,12 +8,14 @@ import CourseForm from "../components/CourseForm";
 import useLocalStorage from "../hooks/useLocalStorage";
 import useCoursesLocal from "../hooks/useCoursesLocal";
 import { useSearchParams, useNavigate } from "react-router-dom";
+import Toast from "../components/Toast";
 
 export default function Home() {
   const { courses, resetCourses, importCourses, addOrUpdateCourse } =
     useCoursesLocal();
   const [progressMap, setProgressMap] = useLocalStorage("progress_v1", {});
   const [editingCourse, setEditingCourse] = useState(null);
+  const [toastMsg, setToastMsg] = useState(null);
 
   const [params] = useSearchParams();
   const navigate = useNavigate();
@@ -93,15 +95,23 @@ export default function Home() {
           <div className="h-full overflow-y-auto custom-scrollbar p-1">
             <CourseForm
               initial={editingCourse}
+              //   onSave={(c) => {
+              //     addOrUpdateCourse(c);
+              //     setEditingCourse(null);
+              //   }}
               onSave={(c) => {
                 addOrUpdateCourse(c);
                 setEditingCourse(null);
+                setToastMsg("Course saved successfully!");
               }}
               onCancel={() => setEditingCourse(null)}
             />
           </div>
         )}
       </div>
+      {toastMsg && (
+        <Toast message={toastMsg} onClose={() => setToastMsg(null)} />
+      )}
     </div>
   );
 }
