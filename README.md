@@ -35,7 +35,7 @@ This project was built as a comprehensive solution to the **React Intern Take-Ho
 | **Core**        | ✅ Dynamic Course Renderer (JSON to UI)<br>✅ Nested Navigation (Course → Topic → Subtopic)<br>✅ Real-time Search & Filtering<br>✅ Admin Dashboard (Read-only User List)                                                                                   |
 | **UX & Design** | ✅ **Glassmorphism Theme** (Dark Mode Aesthetic)<br>✅ Fully Responsive Mobile Layout<br>✅ **Keyboard Navigation** (Arrow keys for menus, Tab focus rings)<br>✅ ARIA-friendly labels                                                                       |
 | **Content**     | ✅ **Rich Markdown**: Syntax Highlighting, Tables, GitHub-style Alerts (`[!NOTE]`)<br>✅ Deep Linking (Shareable URLs via Query Params)<br>✅ Breadcrumb Navigation                                                                                          |
-| **Bonus** 🏆    | ✅ **Course Creator:** Create & Edit courses with dynamic forms<br>✅ **Persistence:** `localStorage` saves progress & new courses<br>✅ **Progress Tracking:** Dynamic % bars at Course & Topic levels<br>✅ **Data Mgmt:** Import/Export JSON & Reset Data |
+| **Bonus** 🏆    | ✅ **Course Creator:** Create & Edit courses with dynamic forms<br>✅ **Persistence:** `localStorage` saves progress & new courses<br>✅ **Progress Tracking:** Checkboxes/toggles for marking subtopics complete, persistent state via `localStorage`, and completion percentage at topic & course levels.<br>✅ **Data Mgmt:** Import/Export JSON & Reset Data |
 
 ---
 
